@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Hero Challenge</title>
+  </head>
+  <body>
+    <header>
+      <h1>Classificação de Heróis - Nível de XP</h1>
+    </header>
+    <div class="container">
+        <h1>⚔️ Classificador de Heróis ⚔️</h1>
+        <p class="subtitle">Sistema de Classificação por Experiência (XP)</p>
+        
+        <div class="button-container">
+            <button id="btnClassificar" onclick="classificarHerois()">
+              🎮 Classificar Heróis
+            </button>
+        </div>
+
+        <div id="tabelaContainer" class="table-container">
+            <table id="tabelaHerois">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome do Herói</th>
+                        <th>Experiência (XP)</th>
+                        <th>Nível</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela">
+                    <!-- Os dados serão inseridos aqui pelo JavaScript -->
+                </tbody>
+            </table>
+            <p class="info-message">Total de heróis classificados: <span id="totalHerois">0</span></p>
+        </div>
+    </div>
+    <footer>
+      <p>Todos os direitos reservados © 2026</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
